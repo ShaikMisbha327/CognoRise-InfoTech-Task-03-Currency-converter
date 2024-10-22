@@ -1,0 +1,147 @@
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #b00f6d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 20px;
+  }
+
+  .box {
+    background-color: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 20px 50px rgba(105, 2, 70, 0.5);
+    width: 400px;
+    max-width: 100%;
+    /* transition: transform 0.3s ease-in-out; */
+    /* border: 3px solid #65035b; */
+  }
+
+  h1 {
+    text-align: center;
+    font-size: 36px;
+    color: #b00f6d;
+    font-weight: bold;
+  }
+
+  label {
+    font-weight: 600;
+    font-size: 18px;
+    color:black;
+    display: block;
+    margin: 10px 0 5px;
+  }
+
+  select,
+  input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 2px solid #b00f6d;
+    border-radius: 10px;
+    font-size: 16px;
+    background-color: white;
+    color:black;
+  }
+
+  select:focus,
+  input:focus {
+    border-color: #52063a;
+    outline: none;
+  }
+  input {
+    /* background-color: #1c1b1b; */
+    background-color: white;
+    font-weight: bold;
+    /* color: #dec7d3; */
+    color: #1c1b1b;
+    width: 94%;
+  }
+
+  button {
+    width: 100%;
+    padding: 12px;
+    background-color: #b00f6d;
+    color: hsl(0, 50%, 98%);
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    margin-top: 15px;
+  }
+
+  button:hover {
+    background-color: #71075a;
+  }
+
+  button:active {
+    background-color: #c2419f;
+    transform: translateY(2px);
+  }
+
+  #result {
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    color: #b00f6d;
+  }
+  @media (max-width: 576px) {
+    .box {
+      padding: 20px;
+      width: 100%; /* Full width on small screens */
+    }
+  
+    h1 {
+      font-size: 28px;
+    }
+  
+    label, input, select {
+      font-size: 14px;
+      padding: 10px;
+    }
+  
+    button {
+      font-size: 16px;
+      padding: 10px;
+    }
+  }
+  
+  /* For tablets and medium devices */
+  @media (min-width: 577px) and (max-width: 768px) {
+    .box {
+      width: 350px;
+    }
+  
+    h1 {
+      font-size: 32px;
+    }
+  
+    button {
+      font-size: 17px;
+    }
+  }
+  
+  /* For large devices (desktops) */
+  @media (min-width: 769px) {
+    .box {
+      width: 400px; /* Keep the width 400px for large devices */
+    }
+  }
+  @keyframes fadeIn {
+    from{
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+} 
+.box{
+    animation: fadeIn 1s ease-out;
+}
